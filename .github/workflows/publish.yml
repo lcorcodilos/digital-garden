@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Clone quartz-hoster
-        run: git clone --depth 1 git@github.com:lcorcodilos/quartz-hoster.git quartz-hoster
+        run: git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
 
       - name: Copy content into quartz-hoster
         run: |
