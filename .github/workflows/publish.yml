@@ -29,7 +29,7 @@ jobs:
       - name: Build site with Docker Compose
         run: |
           cd quartz-hoster
-          docker compose up --build
+          docker compose run --rm app npx quartz build
 
       - name: Copy built site to output
         run: |
