@@ -1,0 +1,46 @@
+name: Publish Digital Garden
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout content repository
+        uses: actions/checkout@v4
+
+      - name: Clone quartz-hoster
+        run: git clone --depth 1 git@github.com:lcorcodilos/quartz-hoster.git quartz-hoster
+
+      - name: Copy content into quartz-hoster
+        run: |
+          rm -rf quartz-hoster/content/*
+          cp -r ./*.md quartz-hoster/content/
+          # Copy any other assets if needed
+
+      - name: Build site with Docker Compose
+        run: |
+          cd quartz-hoster
+          docker compose up --build
+
+      - name: Copy built site to output
+        run: |
+          mkdir -p ./output
+          cp -r quartz-hoster/public/* ./output/
+          touch ./output/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./output
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
