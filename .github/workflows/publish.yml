@@ -29,7 +29,7 @@ jobs:
           cd quartz-hoster
           curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
           chmod 755 action.sh
-          ./action.sh simplicity
+          ./action.sh meridian
           echo "=====Quartz content/ folder====="
           ls content/
           echo "================================"
