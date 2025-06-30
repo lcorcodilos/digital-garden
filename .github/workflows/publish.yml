@@ -21,7 +21,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
           rm -rf quartz-hoster/content/*
-          rsync -anv --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
+          rsync -av --exclude="quartz-hoster/*" --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
           mv .quartz.config quartz-hoster/quartz.config.ts
           cd quartz-hoster
           docker compose run --rm app npx quartz build
