@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build with quartz-hoster
-        run:
+        run: |
           git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
           rm -rf quartz-hoster/content/*
           rsync -anv --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
