@@ -31,6 +31,7 @@ jobs:
         run: |
           cd quartz-hoster
           docker compose run --rm app npx quartz build
+          ls public/*
 
       - name: Copy built site to output
         run: |
