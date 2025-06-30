@@ -23,7 +23,8 @@ jobs:
       - name: Copy content into quartz-hoster
         run: |
           rm -rf quartz-hoster/content/*
-          cp -r ./*.md quartz-hoster/content/
+          rsync -av --include='*/' --include='*.md' --exclude='*' . quartz-hoster/content/
+          mv .quartz.config quartz-hoster/quartz.config
           # Copy any other assets if needed
 
       - name: Build site with Docker Compose
