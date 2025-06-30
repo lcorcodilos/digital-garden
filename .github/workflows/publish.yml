@@ -17,32 +17,21 @@ jobs:
       - name: Checkout content repository
         uses: actions/checkout@v4
 
-      - name: Clone quartz-hoster
-        run: git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
-
-      - name: Copy content into quartz-hoster
-        run: |
+      - name: Build with quartz-hoster
+        run:
+          git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
           rm -rf quartz-hoster/content/*
-          rsync -av --include='*/' --include='*.md' --exclude='*' . quartz-hoster/content/
+          rsync -anv --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
           mv .quartz.config quartz-hoster/quartz.config.ts
-          # Copy any other assets if needed
-
-      - name: Build site with Docker Compose
-        run: |
           cd quartz-hoster
           docker compose run --rm app npx quartz build
-          ls public/*
-
-      - name: Copy built site to output
-        run: |
-          mkdir -p ./output
-          cp -r quartz-hoster/public/* ./output/
           touch ./output/.nojekyll
+          ls public/*
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./output
+          path: ./quartz-hoster/public
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
