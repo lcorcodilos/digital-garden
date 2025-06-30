@@ -24,7 +24,7 @@ jobs:
         run: |
           rm -rf quartz-hoster/content/*
           rsync -av --include='*/' --include='*.md' --exclude='*' . quartz-hoster/content/
-          mv .quartz.config quartz-hoster/quartz.config
+          mv .quartz.config quartz-hoster/quartz.config.ts
           # Copy any other assets if needed
 
       - name: Build site with Docker Compose
