@@ -23,12 +23,12 @@ jobs:
           rm -rf quartz-hoster/content/*
           rsync -av --exclude="quartz-hoster/*" --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
           mv .quartz.config quartz-hoster/quartz.config.ts
-          curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
-          ./action.sh simplicity
           
       - name: Build with quartz-hoster
         run: |
           cd quartz-hoster
+          curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
+          ./action.sh simplicity
           echo "=====Quartz content/ folder====="
           ls content/
           echo "================================"
