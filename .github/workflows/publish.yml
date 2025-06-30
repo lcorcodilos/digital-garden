@@ -25,7 +25,7 @@ jobs:
           mv .quartz.config quartz-hoster/quartz.config.ts
           cd quartz-hoster
           docker compose run --rm app npx quartz build
-          touch ./output/.nojekyll
+          touch ./public/.nojekyll
           ls public/*
 
       - name: Upload Pages artifact
