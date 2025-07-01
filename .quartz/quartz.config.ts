@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "https://lucascorcodilos.com/digital-garden/",
-    ignorePatterns: ["private", "templates", ".obsidian", "ipynb", "Excalidraw"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".git", ".quartz", "ipynb", "Excalidraw"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
