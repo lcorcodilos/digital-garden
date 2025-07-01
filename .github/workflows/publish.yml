@@ -2,54 +2,34 @@ name: Publish Digital Garden
 
 on:
   push:
-    branches: [main]
+    branches: 
+      - main
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
+  build:
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout content repository
-        uses: actions/checkout@v4
-
-      - name: Prepare quartz-hoster
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+          repository: jackyzha0/quartz
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info
+          path: digital-garden/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Quartz
         run: |
-          git clone --depth 1 https://github.com/lcorcodilos/quartz-hoster.git quartz-hoster
-          rm -rf quartz-hoster/content/*
-          rsync -av --exclude="quartz-hoster/*" --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs . quartz-hoster/content/
-          mv .quartz.config quartz-hoster/quartz.config.ts
-          
-      - name: Build with quartz-hoster
-        run: |
-          cd quartz-hoster
-          curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
-          chmod 755 action.sh
-          ./action.sh meridian
-          echo "=====Quartz content/ folder====="
-          ls content/
-          echo "================================"
-          docker compose run --rm app npx quartz build
-          echo "=====Quartz public/ folder====="
-          ls public/*
-          echo "==============================="
-
-      - name: Move content out of quartz-hoster
-        run: |
-          cp -r quartz-hoster/public ./output
-          touch ./output/.nojekyll
-          echo "======Job output folder========="
-          ls ./output
-          echo "================================"
-
-      - name: Upload Pages artifact
+            rsync -av --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs digital-garden/ content/
+            npx quartz build
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./output
-
+          path: public
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
