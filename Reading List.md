@@ -17,3 +17,5 @@ I'm also reading physical books (that will make it on here at some point with my
 4. [Basic Facts About GPUs](https://damek.github.io/random/basic-facts-about-gpus/)
 5. [Clever Algorithms: Nature-Inspired Programming Recipes](https://cleveralgorithms.com/)
 6. [Writing an LLM from scratch](https://www.gilesthomas.com/2024/12/llm-from-scratch-1)
+7. [Writing code was never the bottleneck](https://ordep.dev/posts/writing-code-was-never-the-bottleneck)
+
