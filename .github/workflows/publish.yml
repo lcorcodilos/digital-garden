@@ -35,12 +35,12 @@ jobs:
             echo "========== ls ==============="
             ls 
             echo "========== ls quartz ==============="
-            ls quartz/
-            echo "========== ls digitial-garden ==============="
-            ls digitial-garden/
-            echo "========== ls digitial-garden/.quartz ==============="
-            ls digitial-garden/.quartz
-            mv digitial-garden/.quartz/_index.scss quartz/styles/themes/_index.scss
+            ls quartz/styles/
+            echo "========== ls digital-garden ==============="
+            ls digital-garden/
+            echo "========== ls digital-garden/.quartz ==============="
+            ls digital-garden/.quartz
+            mv digital-garden/.quartz/_index.scss quartz/styles/themes/_index.scss
             rsync -av --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs digital-garden/ content/
             npx quartz build
       - name: Upload artifact
