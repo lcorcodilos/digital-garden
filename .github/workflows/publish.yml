@@ -32,9 +32,14 @@ jobs:
             cp digital-garden/.quartz/quartz.config.ts quartz.config.ts
             chmod 755 digital-garden/.quartz/theme_setup.sh
             ./digital-garden/.quartz/theme_setup.sh
+            echo "========== ls ==============="
             ls 
-            ls quartz
-            ls digitial-garden/.quartz/_index.scss
+            echo "========== ls quartz ==============="
+            ls quartz/styles/themes
+            echo "========== ls digitial-garden ==============="
+            ls digitial-garden/
+            echo "========== ls digitial-garden/.quartz ==============="
+            ls digitial-garden/.quartz
             mv digitial-garden/.quartz/_index.scss quartz/styles/themes/_index.scss
             rsync -av --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs digital-garden/ content/
             npx quartz build
