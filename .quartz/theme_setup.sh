@@ -6,5 +6,3 @@ else
   sed -ir 's#@use "./base.scss";#@use "./base.scss";\n@use "./themes";#' "quartz/styles/custom.scss"
   echo_info "Added import line to custom.scss..."
 fi
-
-mv digital-garden/.quartz/_index.scss quartz/styles/themes/
