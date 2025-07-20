@@ -7,4 +7,4 @@ else
   echo_info "Added import line to custom.scss..."
 fi
 
-mv digitial-garden/.quartz/_index.scss quartz/styles/themes/
+mv digital-garden/.quartz/_index.scss quartz/styles/themes/
