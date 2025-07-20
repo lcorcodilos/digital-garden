@@ -26,4 +26,7 @@ I'm also reading physical books (that will make it on here at some point with my
 | [Clever Algorithms: Nature-Inspired Programming Recipes](https://cleveralgorithms.com/)                              | Online book   |
 | [Writing an LLM from scratch](https://www.gilesthomas.com/2024/12/llm-from-scratch-1)                                | Multi-article |
 | [Basic facts about GPUs](https://damek.github.io/random/basic-facts-about-gpus/)                                     | Article       |
+| [Why I'm Betting Against AI Agents in 2025](https://utkarshkanwat.com/writing/betting-against-agents/)               | Article       |
+| [Local-first software](https://www.inkandswitch.com/essay/local-first/)                                              | Essay         |
+| [The Big LLM Architecture Comparison](https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison)   | Essay         |
 Copy-past bar: ❌ ✅
