@@ -40,7 +40,10 @@ export const defaultContentPageLayout: PageLayout = {
         }),
         Component.Explorer({
             filterFn: (node) => {
-                return node.data.tags?.includes("explorerexclude") !== true
+                if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
+                    return false
+                }
+                return node.data.tags["explorerExclude"]
             },
         }),
     ],
@@ -68,7 +71,10 @@ export const defaultListPageLayout: PageLayout = {
         }),
         Component.Explorer({
             filterFn: (node) => {
-                return node.data.tags?.includes("explorerexclude") !== true
+                if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
+                    return false
+                }
+                return node.data.tags["explorerExclude"]
             },
         }),
     ],
