@@ -38,14 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
                 { Component: Component.ReaderMode() },
             ],
         }),
-        Component.Explorer({
-            filterFn: (node) => {
-                if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
-                    return true
-                }
-                return !node.data.tags["explorerExclude"]
-            },
-        }),
+        Component.Explorer(),
     ],
     right: [
         Component.Graph(),
@@ -69,14 +62,7 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.Darkmode() },
             ],
         }),
-        Component.Explorer({
-            filterFn: (node) => {
-                if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
-                    return true
-                }
-                return !node.data.tags["explorerExclude"]
-            },
-        }),
+        Component.Explorer(),
     ],
     right: [],
 }
