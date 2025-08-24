@@ -7,7 +7,7 @@ tags:
   - meditation
   - to-do
   - lists
-explorerExclude: true
+explorerExclude: false
 ---
 - Core idea: Reverse interview your future team *after* you've negotiated the offer, and *before* you accept it.
 	- I get the point here but part of me feels that good, hard questions are totally appropriate to ask before getting an offer
