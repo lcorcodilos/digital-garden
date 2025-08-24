@@ -41,9 +41,9 @@ export const defaultContentPageLayout: PageLayout = {
         Component.Explorer({
             filterFn: (node) => {
                 if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
-                    return false
+                    return true
                 }
-                return node.data.tags["explorerExclude"]
+                return !node.data.tags["explorerExclude"]
             },
         }),
     ],
@@ -72,9 +72,9 @@ export const defaultListPageLayout: PageLayout = {
         Component.Explorer({
             filterFn: (node) => {
                 if (!node.data.tags || !node.data.tags.hasOwnProperty("explorerExclude")) {
-                    return false
+                    return true
                 }
-                return node.data.tags["explorerExclude"]
+                return !node.data.tags["explorerExclude"]
             },
         }),
     ],
