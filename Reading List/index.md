@@ -12,15 +12,16 @@ Here's some stuff I want to read. I've actually read some of it already but of t
 
 I'm also reading physical books (that will make it on here at some point with my notes) so it's not as if I don't have my reading capacity occupied by other content as well.
 ### Completed
-| Title/Link                                                                                                        | Type     | Follow up thoughts |
-| ----------------------------------------------------------------------------------------------------------------- | -------- | ------------------ |
-| [Pascal's Scams](https://unenumerated.blogspot.com/2012/07/pascals-scams.html)                                    | Article  |                    |
-| [I Deleted My Second Brain](https://medium.com/westenberg/i-deleted-my-second-brain-b7a65bce3717)                 | Article  |                    |
-| [Weird Expressions in Rust](https://www.wakunguma.com/blog/rust-weird-expr)                                       | Article  |                    |
-| [Writing code was never the bottleneck](https://ordep.dev/posts/writing-code-was-never-the-bottleneck)            | Article  |                    |
-| [Enough AI copilots! We need AI HUDs](https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds) | Article  |                    |
-| [Red team vs Blue team activities for AI (Terence Tao)](https://mathstodon.xyz/@tao/114915604830689046)           | Mastadon |                    |
-| [How to Write a Good Design Document](https://grantslatton.com/how-to-design-document)                            | Article  |                    |
+| Title/Link                                                                                                        | Type     | Follow up thoughts                                           |
+| ----------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------ |
+| [Pascal's Scams](https://unenumerated.blogspot.com/2012/07/pascals-scams.html)                                    | Article  |                                                              |
+| [I Deleted My Second Brain](https://medium.com/westenberg/i-deleted-my-second-brain-b7a65bce3717)                 | Article  |                                                              |
+| [Weird Expressions in Rust](https://www.wakunguma.com/blog/rust-weird-expr)                                       | Article  |                                                              |
+| [Writing code was never the bottleneck](https://ordep.dev/posts/writing-code-was-never-the-bottleneck)            | Article  |                                                              |
+| [Enough AI copilots! We need AI HUDs](https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds) | Article  |                                                              |
+| [Red team vs Blue team activities for AI (Terence Tao)](https://mathstodon.xyz/@tao/114915604830689046)           | Mastadon |                                                              |
+| [How to Write a Good Design Document](https://grantslatton.com/how-to-design-document)                            | Article  |                                                              |
+| [Reverse Interviewing Your Future Manager and Team](https://blog.pragmaticengineer.com/reverse-interviewing/)     | Article  | [[Reverse Interviewing Your Future Manager and Team\|Notes]] |
 
 ### To Read
 | Title/Link                                                                                                                                                                                                                 | Type          |
@@ -38,7 +39,6 @@ I'm also reading physical books (that will make it on here at some point with my
 | [The Big OOPs](https://www.youtube.com/watch?v=wo84LFzx5nI)                                                                                                                                                                | Video         |
 | [A Weak Defense of OOP](https://www.youtube.com/watch?v=qAFxAxJOXOQ)                                                                                                                                                       | Video         |
 | [Why LLMs Can't Really Build Software](https://zed.dev/blog/why-llms-cant-build-software)                                                                                                                                  | Article       |
-| [Reverse Interviewing Your Future Manager and Team](https://blog.pragmaticengineer.com/reverse-interviewing/)                                                                                                              | Article       |
 | [The Magnitude of His Own Folly](https://www.lesswrong.com/posts/fLRPeXihRaiRo5dyX/the-magnitude-of-his-own-folly)                                                                                                         | Essay         |
 | [Be Impatient](https://www.benkuhn.net/impatient/)                                                                                                                                                                         | Essay         |
 Copy-past bar: ❌ ✅
