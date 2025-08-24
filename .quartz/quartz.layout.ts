@@ -64,8 +64,7 @@ export const defaultListPageLayout: PageLayout = {
         }),
         Component.Explorer({
             filterFn: (node) => {
-                // exclude files with the tag "explorerexclude"
-                return !!(node.data.tags && node.data.tags.explorerExclude === true)
+                return node.data.tags?.includes("explorerexclude") !== true
             },
         }),
     ],
