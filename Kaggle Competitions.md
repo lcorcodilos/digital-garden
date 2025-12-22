@@ -1,11 +1,11 @@
 ---
-publish: false
+publish: true
 title: Kaggle Competitions
 date: 2025-07-20
 tags:
-  - data science
   - kaggle
   - lists
+  - data-science
 ---
 I've tried several times to get involved in Kaggle competitions and always stagnate. Sometimes I just end up downloading the data and other times I do make some progress before other things become a priority. Some of the problems are interesting though so I'm recording what I've started in the past in case I'm looking for something to come back to.
 
