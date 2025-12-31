@@ -26,6 +26,8 @@ I'm also reading physical books (that will make it on here at some point with my
 | [Why LLMs Can't Really Build Software](https://zed.dev/blog/why-llms-cant-build-software)                         | Article   |                                                              |
 | [Altoids by the Fistful](https://www.scottsmitelli.com/articles/altoids-by-the-fistful/)                          | Essay     |                                                              |
 | [The von-Mises Fisher Distribution](https://en.wikipedia.org/wiki/Von_Mises%E2%80%93Fisher_distribution)          | Wikipedia | N/A                                                          |
+| [Against Resolutions](https://post.substack.com/p/against-resolutions)                                            | Essay     | [[Against Resolutions\|Notes]]                               |
+
 
 ### To Read
 | Title/Link                                                                                                                                                                                                                 | Type          |

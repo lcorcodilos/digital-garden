@@ -5,9 +5,10 @@ tags:
   - reading
   - writing
   - meditation
-  - to-do
-  - lists
 explorerExclude: true
+source: https://blog.pragmaticengineer.com/reverse-interviewing/
+created: 2025-09-01
+updated: 2025-12-31
 ---
 ### Core idea
 Reverse interview your future team *after* you've negotiated the offer, and *before* you accept it
