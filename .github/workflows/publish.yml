@@ -33,7 +33,7 @@ jobs:
             cp digital-garden/.quartz/quartz.layout.ts quartz.layout.ts
             chmod 755 digital-garden/.quartz/theme_setup.sh
             ./digital-garden/.quartz/theme_setup.sh
-            rsync -av --include='*.md' --include="**/" --include='**/assets/***' --exclude="*" --prune-empty-dirs digital-garden/ content/
+            rsync -av --include='*.md' --include="**/" --exclude="*" --prune-empty-dirs digital-garden/ content/
             ls -trlh content/*
             npx quartz build
       - name: Upload artifact
