@@ -32,10 +32,15 @@ In that year, I started reading more about systems thinking and learned two rele
 - We confuse complexity in software systems with complexity in systems of humans building the software. We are prone to misclassify the latter as the former because we rather tackle the problem with the predicable computer versus the unpredictable human.
 
 With these in mind, I spent time time mapping out the human system in play. I've included my diagram below (DS = Data Science Team, SR = Security Research Team).
+
 ![[coverage_goal_system_model.png]]
+
 As part of this exercise, I realized that this is a simple development + QA relationship. I also uncovered the two interwoven cycles in purple and orange and, importantly, they are *constructive* like this:
+
 ![[Pasted image 20251126090830.png]]
+
 and not *destructive* like this:
+
 ![[Pasted image 20251126090846.png]]
 
 From a high level view, this makes sense -- both cycles are working to improve product coverage (the OKR!). But during team meetings, folks actively identified the process as "adversarial" in nature, implying a destructive relationship between the cycles. And if you consider the KPI -- increase the *percentage* of the sample set identified by the product as malicious -- it's easy to agree. One team is working on the numerator and the other on the denominator. Why would the percentage go up unless the DS cycle is considerably stronger than the SR one?
