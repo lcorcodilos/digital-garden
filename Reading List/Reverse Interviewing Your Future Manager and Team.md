@@ -5,7 +5,7 @@ tags:
   - reading
   - writing
   - meditation
-explorerExclude: true
+explorerexclude: true
 source: https://blog.pragmaticengineer.com/reverse-interviewing/
 created: 2025-09-01
 updated: 2025-12-31

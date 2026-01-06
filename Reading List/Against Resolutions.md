@@ -8,7 +8,7 @@ tags:
 created: 2025-12-31
 updated: 2025-12-31
 source: https://post.substack.com/p/against-resolutions
-explorerExclude: true
+explorerexclude: true
 ---
 Suleika's words here are so cutting yet so kind. 
 
